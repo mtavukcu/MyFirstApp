@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
 
     fun updateRaffleOutput(view: View) {
         raffleList.add(randomInt())
-        text_view_2.text = "${raffleList.sorted()}"
-        text_view_1.text = "Input: ${raffleList.last()}"
+        textViewOutput.text = "${raffleList.sorted()}"
+        textViewInput.text = "Input: ${raffleList.last()}"
     }
 
     private fun randomInt(): Int {
